@@ -10,7 +10,7 @@
   --bg-url: url(./assets/bg-mobile.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.1);
-  --surface-color-hover: rgba(255, 255, 255, 0.05);
+  --surface-color-hover: rgba(15, 11, 11, 0.05);
   --highlight-color: rgba(255, 255, 255, 0.2);
   --switch-bg-url: url(./assets/MoonStars.svg);
 }
@@ -39,6 +39,7 @@ body * {
   max-width: 588px;
   margin: 56px auto 0px;
   padding: 0;
+  overflow: auto;
 }
 
 /*Profile*/
@@ -155,4 +156,16 @@ footer {
   text-align: center;
   padding: 24px;
   font-size: 14px;
+}
+
+/*Media queries*/
+
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop-dark.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-desktop-lite.jpg);
+  }
 }
